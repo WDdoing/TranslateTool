@@ -7,6 +7,7 @@
 //
 
 #import "WDTranslateViewController.h"
+#import "WDParseOperation.h"
 
 @interface WDTranslateViewController ()
 
@@ -23,6 +24,7 @@
 @synthesize translatedWord;
 @synthesize originLanguage;
 @synthesize destinationLanguage;
+@synthesize parser;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,6 +52,8 @@
         NSLog(@"the origin word is : %@",self.originWord);
     }
     //invoke parse method
+    [self parseJSONData];
+   
 }
 
 - (IBAction)backgroundTapped:(id)sender
@@ -61,6 +65,7 @@
             self.originWord = self.translateInput.text;
             NSLog(@"the origin word is : %@",self.originWord);
             //invoke parse method
+            [self parseJSONData];
         }
     }
 }
@@ -74,6 +79,43 @@
     }else if (segmentedControl1.selectedSegmentIndex == 0) {
         self.segmentedControl2.selectedSegmentIndex = 1;
     }
+}
+
+- (void)parseJSONData
+{
+    switch (segmentedControl1.selectedSegmentIndex) {
+        case 0:
+            self.originLanguage = @"zh";
+            break;
+        case 1:
+            self.originLanguage = @"en";
+            break;
+        case 2:
+            self.originLanguage = @"jp";
+            break;
+    }
+    switch (segmentedControl2.selectedSegmentIndex) {
+        case 0:
+            self.destinationLanguage = @"zh";
+            break;
+        case 1:
+            self.destinationLanguage = @"en";
+            break;
+        case 2:
+            self.destinationLanguage = @"jp";
+            break;
+    }
+    if (self.parser == nil) {
+        self.parser = [[WDParseOperation alloc] init];
+    }
+    [parser parse:originWord from:originLanguage to:destinationLanguage];
+    /*id result = [[parser.jsonObjects valueForKey:@"trans_result"] valueForKey:@"dst"];
+    NSString * resul= result;
+    NSLog(@"It's a string:%@",resul);
+    if ([result isKindOfClass:[NSString class]]) {
+        NSLog(@"It's a string:%@",result);
+    }*/
+    self.translateResult.text = (NSString *)[[parser.jsonObjects valueForKey:@"trans_result"] valueForKey:@"dst"];
 }
 
 - (void)didReceiveMemoryWarning

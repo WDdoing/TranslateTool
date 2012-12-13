@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class WDParseOperation;
+
 @interface WDTranslateViewController : UIViewController
 
 
@@ -20,6 +22,7 @@
 @property (strong, nonatomic) NSString * translatedWord;
 @property (strong, nonatomic) NSString * originLanguage;
 @property (strong, nonatomic) NSString * destinationLanguage;
+@property (strong, nonatomic) WDParseOperation * parser;
 
 
 - (IBAction)toggleSegmentedControl1:(UISegmentedControl *)segmentControl1;
