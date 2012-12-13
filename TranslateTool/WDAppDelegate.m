@@ -7,6 +7,8 @@
 //
 
 #import "WDAppDelegate.h"
+#import "WDTranslateViewController.h"
+#import "WDWordListViewController.h"
 
 @implementation WDAppDelegate
 
@@ -15,6 +17,25 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    WDTranslateViewController * translateViewController = [[WDTranslateViewController alloc] init];
+    translateViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"翻译" image:[UIImage imageNamed:@"book_side_icon&32.png"] tag:0];
+    
+    WDWordListViewController * wordListController = [[WDWordListViewController alloc] init];
+    
+    NSMutableArray * controllers = [[NSMutableArray alloc] init];
+    [controllers addObject:translateViewController];
+    [controllers addObject:wordListController];
+    
+    UITabBarController * tabBarController = [[UITabBarController alloc] init];
+    //tabBarController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:1];
+    tabBarController.viewControllers = controllers;
+    tabBarController.selectedIndex = 0;
+    
+    self.window.rootViewController = tabBarController;
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

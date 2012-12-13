@@ -16,6 +16,11 @@
 		21EC771C16527F4200E0FBE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC771B16527F4200E0FBE7 /* Default.png */; };
 		21EC771E16527F4200E0FBE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC771D16527F4200E0FBE7 /* Default@2x.png */; };
 		21EC772016527F4200E0FBE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC771F16527F4200E0FBE7 /* Default-568h@2x.png */; };
+		21EC77291652802B00E0FBE7 /* WDTranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC77271652802B00E0FBE7 /* WDTranslateViewController.m */; };
+		21EC772A1652802B00E0FBE7 /* WDTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */; };
+		21EC773216528A7D00E0FBE7 /* WDWordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */; };
+		21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */; };
+		21EC77351652952600E0FBE7 /* book_side_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC77341652952600E0FBE7 /* book_side_icon&32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,13 @@
 		21EC771B16527F4200E0FBE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		21EC771D16527F4200E0FBE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		21EC771F16527F4200E0FBE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		21EC77261652802B00E0FBE7 /* WDTranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTranslateViewController.h; sourceTree = "<group>"; };
+		21EC77271652802B00E0FBE7 /* WDTranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTranslateViewController.m; sourceTree = "<group>"; };
+		21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDTranslateViewController.xib; sourceTree = "<group>"; };
+		21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWordListViewController.h; sourceTree = "<group>"; };
+		21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWordListViewController.m; sourceTree = "<group>"; };
+		21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDWordListViewController.xib; sourceTree = "<group>"; };
+		21EC77341652952600E0FBE7 /* book_side_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book_side_icon&32.png"; path = "../../../../Downloads/cc/white/png/book_side_icon&32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,12 @@
 			children = (
 				21EC771816527F4200E0FBE7 /* WDAppDelegate.h */,
 				21EC771916527F4200E0FBE7 /* WDAppDelegate.m */,
+				21EC77261652802B00E0FBE7 /* WDTranslateViewController.h */,
+				21EC77271652802B00E0FBE7 /* WDTranslateViewController.m */,
+				21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */,
+				21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */,
+				21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */,
+				21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */,
 				21EC771016527F4200E0FBE7 /* Supporting Files */,
 			);
 			path = TranslateTool;
@@ -95,6 +113,7 @@
 				21EC771B16527F4200E0FBE7 /* Default.png */,
 				21EC771D16527F4200E0FBE7 /* Default@2x.png */,
 				21EC771F16527F4200E0FBE7 /* Default-568h@2x.png */,
+				21EC77341652952600E0FBE7 /* book_side_icon&32.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +174,9 @@
 				21EC771C16527F4200E0FBE7 /* Default.png in Resources */,
 				21EC771E16527F4200E0FBE7 /* Default@2x.png in Resources */,
 				21EC772016527F4200E0FBE7 /* Default-568h@2x.png in Resources */,
+				21EC772A1652802B00E0FBE7 /* WDTranslateViewController.xib in Resources */,
+				21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */,
+				21EC77351652952600E0FBE7 /* book_side_icon&32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +189,8 @@
 			files = (
 				21EC771616527F4200E0FBE7 /* main.m in Sources */,
 				21EC771A16527F4200E0FBE7 /* WDAppDelegate.m in Sources */,
+				21EC77291652802B00E0FBE7 /* WDTranslateViewController.m in Sources */,
+				21EC773216528A7D00E0FBE7 /* WDWordListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
