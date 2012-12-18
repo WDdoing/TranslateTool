@@ -115,7 +115,10 @@
     if ([result isKindOfClass:[NSString class]]) {
         NSLog(@"It's a string:%@",result);
     }*/
-    self.translateResult.text = (NSString *)[[parser.jsonObjects valueForKey:@"trans_result"] valueForKey:@"dst"];
+    /*self.translateResult.text = (NSString *)[[parser.jsonObjects valueForKey:@"trans_result"] valueForKey:@"dst"];*/
+    NSString * result = [[[parser.jsonObjects valueForKey:@"trans_result"] objectAtIndex:0] valueForKey:@"dst"];
+    NSLog(@"%@",result);
+    self.translateResult.text = result;
 }
 
 - (void)didReceiveMemoryWarning
