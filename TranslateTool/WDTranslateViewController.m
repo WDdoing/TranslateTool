@@ -8,6 +8,7 @@
 
 #import "WDTranslateViewController.h"
 #import "WDParseOperation.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface WDTranslateViewController ()
 
@@ -39,14 +40,34 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //display a board for UITextView.
+    self.translateInput.backgroundColor = [UIColor clearColor];
+    self.translateInput.layer.masksToBounds = YES;
+    self.translateInput.layer.borderWidth = 1;
+    self.translateInput.layer.borderColor = [[UIColor blackColor] CGColor];
+    
+    self.translateInput.delegate = self;
+    
+    if(self.translateInput.inputAccessoryView == nil)
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"InputToolbar" owner:self options:nil];
+        self.translateInput.inputAccessoryView = self.inputToolbar;
+    }
+    
     self.segmentedControl1.selectedSegmentIndex = 0;
     self.segmentedControl2.selectedSegmentIndex = 1;
     //[self.segmentedControl2 setEnabled:NO forSegmentAtIndex:0];
 }
 
-- (IBAction)textFieldDoneEditing:(id)sender
+- (void)endEditToTranslate:(id)sender
 {
-    [sender resignFirstResponder];
+    [self.translateInput resignFirstResponder];
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    //[textView resignFirstResponder];
     if (self.translateInput.text != NULL) {
         self.originWord = self.translateInput.text;
         NSLog(@"the origin word is : %@",self.originWord);

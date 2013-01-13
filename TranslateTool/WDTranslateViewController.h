@@ -10,13 +10,14 @@
 
 @class WDParseOperation;
 
-@interface WDTranslateViewController : UIViewController
+@interface WDTranslateViewController : UIViewController<UITextViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UILabel * translateResult;
-@property (strong, nonatomic) IBOutlet UITextField * translateInput;
+@property (strong, nonatomic) IBOutlet UITextView * translateInput;
 @property (strong, nonatomic) IBOutlet UISegmentedControl * segmentedControl1;
 @property (strong, nonatomic) IBOutlet UISegmentedControl * segmentedControl2;
+@property (strong, nonatomic) IBOutlet UIToolbar * inputToolbar;
 @property (strong, nonatomic) NSDictionary * wordDic;
 @property (strong, nonatomic) NSString * originWord;
 @property (strong, nonatomic) NSString * translatedWord;
@@ -27,7 +28,10 @@
 
 - (IBAction)toggleSegmentedControl1:(UISegmentedControl *)segmentControl1;
 
-- (IBAction)textFieldDoneEditing:(id)sender;
+- (void)textViewDidEndEditing:(UITextView *)textView;
+
 - (IBAction)backgroundTapped:(id)sender;
+- (IBAction)endEditToTranslate:(id)sender;
+
 
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		214A6E6D1679BEB800304267 /* WDParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A6E6C1679BEB800304267 /* WDParseOperation.m */; };
+		21E81E9016A2881D00A33036 /* book_side_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E81E8F16A2881D00A33036 /* book_side_icon&32.png */; };
+		21E81E9216A2932500A33036 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E81E9116A2932500A33036 /* QuartzCore.framework */; };
+		21E81E9616A2A6F800A33036 /* InputToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E81E9516A2A6F800A33036 /* InputToolbar.xib */; };
 		21EC770A16527F4200E0FBE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EC770916527F4200E0FBE7 /* UIKit.framework */; };
 		21EC770C16527F4200E0FBE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EC770B16527F4200E0FBE7 /* Foundation.framework */; };
 		21EC770E16527F4200E0FBE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EC770D16527F4200E0FBE7 /* CoreGraphics.framework */; };
@@ -21,12 +24,14 @@
 		21EC772A1652802B00E0FBE7 /* WDTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */; };
 		21EC773216528A7D00E0FBE7 /* WDWordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */; };
 		21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */; };
-		21EC77351652952600E0FBE7 /* book_side_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EC77341652952600E0FBE7 /* book_side_icon&32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		214A6E6B1679BEB700304267 /* WDParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDParseOperation.h; sourceTree = "<group>"; };
 		214A6E6C1679BEB800304267 /* WDParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDParseOperation.m; sourceTree = "<group>"; };
+		21E81E8F16A2881D00A33036 /* book_side_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book_side_icon&32.png"; sourceTree = "<group>"; };
+		21E81E9116A2932500A33036 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21E81E9516A2A6F800A33036 /* InputToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputToolbar.xib; sourceTree = "<group>"; };
 		21EC770516527F4200E0FBE7 /* TranslateTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EC770916527F4200E0FBE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		21EC770B16527F4200E0FBE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,7 +51,6 @@
 		21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWordListViewController.h; sourceTree = "<group>"; };
 		21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWordListViewController.m; sourceTree = "<group>"; };
 		21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDWordListViewController.xib; sourceTree = "<group>"; };
-		21EC77341652952600E0FBE7 /* book_side_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book_side_icon&32.png"; path = "../../../../Downloads/cc/white/png/book_side_icon&32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E81E9216A2932500A33036 /* QuartzCore.framework in Frameworks */,
 				21EC770A16527F4200E0FBE7 /* UIKit.framework in Frameworks */,
 				21EC770C16527F4200E0FBE7 /* Foundation.framework in Frameworks */,
 				21EC770E16527F4200E0FBE7 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +88,7 @@
 		21EC770816527F4200E0FBE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21E81E9116A2932500A33036 /* QuartzCore.framework */,
 				21EC770916527F4200E0FBE7 /* UIKit.framework */,
 				21EC770B16527F4200E0FBE7 /* Foundation.framework */,
 				21EC770D16527F4200E0FBE7 /* CoreGraphics.framework */,
@@ -100,6 +106,7 @@
 				21EC77261652802B00E0FBE7 /* WDTranslateViewController.h */,
 				21EC77271652802B00E0FBE7 /* WDTranslateViewController.m */,
 				21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */,
+				21E81E9516A2A6F800A33036 /* InputToolbar.xib */,
 				21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */,
 				21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */,
 				21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */,
@@ -118,7 +125,7 @@
 				21EC771B16527F4200E0FBE7 /* Default.png */,
 				21EC771D16527F4200E0FBE7 /* Default@2x.png */,
 				21EC771F16527F4200E0FBE7 /* Default-568h@2x.png */,
-				21EC77341652952600E0FBE7 /* book_side_icon&32.png */,
+				21E81E8F16A2881D00A33036 /* book_side_icon&32.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +188,8 @@
 				21EC772016527F4200E0FBE7 /* Default-568h@2x.png in Resources */,
 				21EC772A1652802B00E0FBE7 /* WDTranslateViewController.xib in Resources */,
 				21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */,
-				21EC77351652952600E0FBE7 /* book_side_icon&32.png in Resources */,
+				21E81E9016A2881D00A33036 /* book_side_icon&32.png in Resources */,
+				21E81E9616A2A6F800A33036 /* InputToolbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
