@@ -17,6 +17,7 @@
     if (language1 == nil || languagle2 == nil) {
         language1=languagle2=@"auto";
     }
+    NSLog(@"lang1:%@ lang2:%@",language1,languagle2);
     NSLog(@"parse...");
     NSString * urlString = [NSString stringWithFormat:@"http://openapi.baidu.com/public/2.0/bmt/translate?client_id=y6Xz8rnEj3q5GpLyEUl3YYQS&q=%@&from=%@&to=%@",originWord,language1,languagle2];
     NSURL * url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];

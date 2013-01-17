@@ -24,6 +24,8 @@
 		21EC772A1652802B00E0FBE7 /* WDTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */; };
 		21EC773216528A7D00E0FBE7 /* WDWordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */; };
 		21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */; };
+		7EDAAE9C16A7DE1B00933A69 /* WDTranslateListControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAAE9A16A7DE1B00933A69 /* WDTranslateListControllerViewController.m */; };
+		7EDAAE9D16A7DE1B00933A69 /* WDTranslateListControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EDAAE9B16A7DE1B00933A69 /* WDTranslateListControllerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,9 @@
 		21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWordListViewController.h; sourceTree = "<group>"; };
 		21EC773016528A7D00E0FBE7 /* WDWordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWordListViewController.m; sourceTree = "<group>"; };
 		21EC773116528A7D00E0FBE7 /* WDWordListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDWordListViewController.xib; sourceTree = "<group>"; };
+		7EDAAE9916A7DE1A00933A69 /* WDTranslateListControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTranslateListControllerViewController.h; sourceTree = "<group>"; };
+		7EDAAE9A16A7DE1B00933A69 /* WDTranslateListControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTranslateListControllerViewController.m; sourceTree = "<group>"; };
+		7EDAAE9B16A7DE1B00933A69 /* WDTranslateListControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDTranslateListControllerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				214A6E6C1679BEB800304267 /* WDParseOperation.m */,
 				21EC77261652802B00E0FBE7 /* WDTranslateViewController.h */,
 				21EC77271652802B00E0FBE7 /* WDTranslateViewController.m */,
+				7EDAAE9916A7DE1A00933A69 /* WDTranslateListControllerViewController.h */,
+				7EDAAE9A16A7DE1B00933A69 /* WDTranslateListControllerViewController.m */,
+				7EDAAE9B16A7DE1B00933A69 /* WDTranslateListControllerViewController.xib */,
 				21EC77281652802B00E0FBE7 /* WDTranslateViewController.xib */,
 				21E81E9516A2A6F800A33036 /* InputToolbar.xib */,
 				21EC772F16528A7D00E0FBE7 /* WDWordListViewController.h */,
@@ -190,6 +198,7 @@
 				21EC773316528A7D00E0FBE7 /* WDWordListViewController.xib in Resources */,
 				21E81E9016A2881D00A33036 /* book_side_icon&32.png in Resources */,
 				21E81E9616A2A6F800A33036 /* InputToolbar.xib in Resources */,
+				7EDAAE9D16A7DE1B00933A69 /* WDTranslateListControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +214,7 @@
 				21EC77291652802B00E0FBE7 /* WDTranslateViewController.m in Sources */,
 				21EC773216528A7D00E0FBE7 /* WDWordListViewController.m in Sources */,
 				214A6E6D1679BEB800304267 /* WDParseOperation.m in Sources */,
+				7EDAAE9C16A7DE1B00933A69 /* WDTranslateListControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,7 +58,31 @@
     self.segmentedControl1.selectedSegmentIndex = 0;
     self.segmentedControl2.selectedSegmentIndex = 1;
     //[self.segmentedControl2 setEnabled:NO forSegmentAtIndex:0];
+    
+    [self addToolBar];
 }
+
+
+- (void)addToolBar
+{
+    CGRect bound = [[UIScreen mainScreen] applicationFrame];
+    CGRect toolBarFrame = CGRectMake(0,0, bound.size.width, 50);
+    UIToolbar * toolbar = [[UIToolbar alloc] initWithFrame:toolBarFrame];
+    toolbar.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:1];
+    
+    
+    
+    CGRect labelFrame = CGRectMake(100, 15, 120, 20);
+    UILabel * title = [[UILabel alloc] initWithFrame:labelFrame];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @"Google 翻译";
+    
+    [toolbar addSubview:title];
+    
+    [self.view addSubview:toolbar];
+
+}
+
 
 - (void)endEditToTranslate:(id)sender
 {
